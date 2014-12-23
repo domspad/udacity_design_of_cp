@@ -1,0 +1,10 @@
+2014-12-23 09:01:20.070 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2014-12-23 09:01:20.078 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2014-12-23 09:01:20.097 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2014-12-23 09:01:20.097 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8888/
+2014-12-23 09:01:20.098 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2014-12-23 09:01:28.180 [NotebookApp] Connecting to: tcp://127.0.0.1:56345
+2014-12-23 09:01:28.196 [NotebookApp] Kernel started: 2c0df786-cc44-42bd-b9d1-ccba78d9aaf6
+2014-12-23 09:01:28.300 [NotebookApp] Connecting to: tcp://127.0.0.1:56344
+2014-12-23 09:01:28.302 [NotebookApp] Connecting to: tcp://127.0.0.1:56342
+2014-12-23 09:01:28.332 [NotebookApp] Connecting to: tcp://127.0.0.1:56343
