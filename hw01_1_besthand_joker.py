@@ -140,3 +140,5 @@ def two_pair(ranks):
         return (pair, lowpair)
     else:
         return None 
+
+print test()
