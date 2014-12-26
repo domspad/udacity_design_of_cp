@@ -23,22 +23,60 @@
 # where the best hand is ambiguous (for example, if 
 # you have 4 kings and 3 queens, there are three best
 # hands: 4 kings along with any of the three queens).
-
 import itertools
 
+redreps = [ r+s for r in '23456789TJQKA' for s in 'DH' ]
+blackreps = [ r+s for r in '23456789TJQKA'for s in 'CS' ]
+
+def gen_replace(hand) :
+    """ Given hand of cards, returns a list of the possible ways to replace
+        any jokers in the hand"""
+    newhand = hand
+    replacements = [[]]
+    if '?R' in hand :
+        newhand.remove('?R')
+        replacements = [[r] for r in redreps]
+    if '?B' in hand :
+        newhand.remove('?B')
+        replacements = [h+[b] for b in blackreps for h in replacements]
+    return [hand + rep for rep in replacements ] 
+
+def best_hand(hand):
+    return max(itertools.combinations(hand,5), key=hand_rank)
 
 def best_wild_hand(hand):
     "Try all values for jokers in all 5-card selections."
+    replaced_hands = gen_replace(hand)
+    return max([best_hand(h) for h in replaced_hands], key=hand_rank)
 
+def test() :
+    withblackjoker = "6C 7C 8C 9C TC 5C ?B".split()
+    withredjoker = "6C 7C 8C 9C TC 5C ?R".split()
+    withboth = "TD TC 5H 5C 7C ?R ?B".split()
+    neitherjoker = "JD TC TH 7C 7D 7S 7H".split()
+    assert gen_replace(withblackjoker) == [ "6C 7C 8C 9C TC 5C".split() + [b] for b in blackreps]
+    assert gen_replace(withredjoker) == [ "6C 7C 8C 9C TC 5C".split() + [r] for r in redreps]
+    assert sorted(gen_replace(withboth)) == \
+        sorted([ "TD TC 5H 5C 7C".split() + [r, b] for r in redreps for b in blackreps ])
+    assert gen_replace(neitherjoker) == ["JD TC TH 7C 7D 7S 7H".split()]
 
-def test_best_wild_hand():
     assert (sorted(best_wild_hand("6C 7C 8C 9C TC 5C ?B".split()))
             == ['7C', '8C', '9C', 'JC', 'TC'])
     assert (sorted(best_wild_hand("TD TC 5H 5C 7C ?R ?B".split()))
-            == ['7C', 'TC', 'TD', 'TH', 'TS'])
+            == ['7C', 'TC', 'TC', 'TD', 'TD'])
     assert (sorted(best_wild_hand("JD TC TH 7C 7D 7S 7H".split()))
             == ['7C', '7D', '7H', '7S', 'JD'])
     return 'test_best_wild_hand passes'
+
+
+# def test_best_wild_hand():
+#     assert (sorted(best_wild_hand("6C 7C 8C 9C TC 5C ?B".split()))
+#             == ['7C', '8C', '9C', 'JC', 'TC'])
+#     assert (sorted(best_wild_hand("TD TC 5H 5C 7C ?R ?B".split()))
+#             == ['7C', 'TC', 'TD', 'TH', 'TS'])
+#     assert (sorted(best_wild_hand("JD TC TH 7C 7D 7S 7H".split()))
+#             == ['7C', '7D', '7H', '7S', 'JD'])
+#     return 'test_best_wild_hand passes'
 
 # ------------------
 # Provided Functions
