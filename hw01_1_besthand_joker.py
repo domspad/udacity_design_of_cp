@@ -69,6 +69,37 @@ def test() :
     return 'test_best_wild_hand passes'
 
 
+#########################################
+#           Norvig's solution
+#
+#
+#
+
+import itertools
+
+allranks = '23456789TJQKA'
+redcards = [r+s for r in allranks for s in 'DH' ]
+blackcards = [r+s for r in allranks for s in 'SC' ]
+
+def Norvig_best_wild_hand(hand) :
+    "Try all values for jokers in all 5-card selections"
+    hands = set(best_hand(h)
+                for h in itertools.product(*map(replacements, hand))) # '*'returns list obj unpacked as arguments to a function
+    return max(hands, key=hand_rank) # itertools.product(listA,listB,...) gives all cross products 
+
+def replacements(card) :
+    """Return a list of the possible replacements for a card.
+    There will be more than 1 only for wild cards."""
+    if card == '?B' : return blackcards
+    elif card == '?R' : return redcards 
+    else: return [card]
+    
+def best_hand(hand):
+    return max(itertools.combinations(hand,5), key=hand_rank)
+
+########################################
+
+
 # def test_best_wild_hand():
 #     assert (sorted(best_wild_hand("6C 7C 8C 9C TC 5C ?B".split()))
 #             == ['7C', '8C', '9C', 'JC', 'TC'])
@@ -141,4 +172,6 @@ def two_pair(ranks):
     else:
         return None 
 
-print test()
+
+if __name__ == '__main__' :
+    print test()
