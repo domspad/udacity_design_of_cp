@@ -1,6 +1,7 @@
 import itertools 
 
 def floor_puzzle() :
+    """ Solves floor puzzle as stated in hw 2"""
     floors = range(1,6)
     orderings = itertools.permutations(floors)
     return next( (Hopper, Kay, Liskov, Perlis, Ritchie) for (Hopper, Kay, Liskov, Perlis, Ritchie) in orderings
