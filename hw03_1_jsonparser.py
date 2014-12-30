@@ -1,3 +1,4 @@
+
 # ---------------
 # User Instructions
 #
@@ -65,6 +66,24 @@ def memo(f):
             return f(args)
     return _f
 
+@decorator
+def trace(f):
+    indent = '   '
+    def _f(*args):
+        signature = '%s(%s)' % (f.__name__, ', '.join(map(repr, args)))
+        print '%s--> %s' % (trace.level*indent, signature)
+        trace.level += 1
+        try:
+            result = f(*args)
+            print '%s<-- %s == %s' % ((trace.level-1)*indent, 
+                                      signature, result)
+        finally:
+            # your code here
+            trace.level -= 1
+        return result # your code here
+    trace.level = 0
+    return _f
+
 def parse(start_symbol, text, grammar):
     """Example call: parse('Exp', '3*x + b', G).
     Returns a (tree, remainder) pair. If remainder is '', it parsed the whole
@@ -83,6 +102,7 @@ def parse(start_symbol, text, grammar):
             result.append(tree)
         return result, text
 
+    @trace 
     @memo
     def parse_atom(atom, text):
         if atom in grammar:  # Non-Terminal: tuple of alternatives
@@ -133,4 +153,6 @@ def test():
                       ['value', ['string', '"rides the rodeo"']]]]]], '}']], '')
     return 'tests pass'
 
-print test()
+# print test()
+print "\n\ncalling : json_parse('-123.456e+789')\n\n"
+json_parse('-123.456e+789')
