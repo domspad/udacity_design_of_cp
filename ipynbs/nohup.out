@@ -129,3 +129,227 @@
 2014-12-29 13:11:03.291 [NotebookApp] Connecting to: tcp://127.0.0.1:51464
 2014-12-29 13:11:03.292 [NotebookApp] Connecting to: tcp://127.0.0.1:51465
 2014-12-29 13:11:03.295 [NotebookApp] Connecting to: tcp://127.0.0.1:51463
+2014-12-30 07:08:23.543 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2014-12-30 07:08:23.551 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2014-12-30 07:08:23.570 [NotebookApp] The port 8888 is already in use, trying another random port.
+2014-12-30 07:08:23.570 [NotebookApp] The port 8889 is already in use, trying another random port.
+2014-12-30 07:08:23.570 [NotebookApp] The port 8890 is already in use, trying another random port.
+2014-12-30 07:08:23.570 [NotebookApp] The port 8891 is already in use, trying another random port.
+2014-12-30 07:08:23.571 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2014-12-30 07:08:23.571 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8892/
+2014-12-30 07:08:23.571 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2014-12-30 07:08:27.523 [NotebookApp] Connecting to: tcp://127.0.0.1:62662
+2014-12-30 07:08:27.533 [NotebookApp] Kernel started: d30c987a-5240-4e56-88bd-884d6837ff9e
+2014-12-30 07:08:27.556 [NotebookApp] Connecting to: tcp://127.0.0.1:62660
+2014-12-30 07:08:27.557 [NotebookApp] Connecting to: tcp://127.0.0.1:62659
+2014-12-30 07:08:27.558 [NotebookApp] Connecting to: tcp://127.0.0.1:62661
+2014-12-30 07:08:40.522 [NotebookApp] Connecting to: tcp://127.0.0.1:62694
+2014-12-30 07:08:40.523 [NotebookApp] Kernel started: 9a0d064a-f4f9-4f38-be1a-60bb08ad88f1
+2014-12-30 07:08:40.561 [NotebookApp] Connecting to: tcp://127.0.0.1:62691
+2014-12-30 07:08:40.592 [NotebookApp] Connecting to: tcp://127.0.0.1:62693
+2014-12-30 07:08:40.593 [NotebookApp] Connecting to: tcp://127.0.0.1:62692
+2014-12-30 07:08:59.699 [NotebookApp] Kernel shutdown: d30c987a-5240-4e56-88bd-884d6837ff9e
+2014-12-30 18:16:46.878 [NotebookApp] Connecting to: tcp://127.0.0.1:54953
+2014-12-30 18:16:46.883 [NotebookApp] Kernel started: 687ef98c-2bf0-47a1-93ea-dbe8c72d1c5c
+2014-12-30 18:16:46.933 [NotebookApp] Connecting to: tcp://127.0.0.1:54950
+2014-12-30 18:16:46.947 [NotebookApp] Connecting to: tcp://127.0.0.1:54951
+2014-12-30 18:16:46.948 [NotebookApp] Connecting to: tcp://127.0.0.1:54952
+2014-12-30 18:16:51.463 [NotebookApp] Kernel shutdown: 687ef98c-2bf0-47a1-93ea-dbe8c72d1c5c
+2014-12-31 07:06:57.325 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2014-12-31 07:06:57.334 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2014-12-31 07:06:57.354 [NotebookApp] The port 8888 is already in use, trying another random port.
+2014-12-31 07:06:57.355 [NotebookApp] The port 8889 is already in use, trying another random port.
+2014-12-31 07:06:57.355 [NotebookApp] The port 8890 is already in use, trying another random port.
+2014-12-31 07:06:57.355 [NotebookApp] The port 8891 is already in use, trying another random port.
+2014-12-31 07:06:57.355 [NotebookApp] The port 8892 is already in use, trying another random port.
+2014-12-31 07:06:57.355 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2014-12-31 07:06:57.356 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8831/
+2014-12-31 07:06:57.356 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2014-12-31 07:07:03.664 [NotebookApp] Connecting to: tcp://127.0.0.1:62267
+2014-12-31 07:07:03.667 [NotebookApp] Kernel started: f0abdeab-ee86-47bf-9e9d-eac040faef48
+2014-12-31 07:07:03.763 [NotebookApp] Connecting to: tcp://127.0.0.1:62264
+2014-12-31 07:07:03.765 [NotebookApp] Connecting to: tcp://127.0.0.1:62266
+2014-12-31 07:07:03.766 [NotebookApp] Connecting to: tcp://127.0.0.1:62265
+2014-12-31 10:26:42.264 [NotebookApp] Connecting to: tcp://127.0.0.1:51667
+2014-12-31 10:26:42.268 [NotebookApp] Kernel started: b46d6a3a-c01c-48a4-b772-5251feec5716
+2014-12-31 10:26:42.299 [NotebookApp] Connecting to: tcp://127.0.0.1:51664
+2014-12-31 10:26:42.300 [NotebookApp] Connecting to: tcp://127.0.0.1:51666
+2014-12-31 10:26:42.301 [NotebookApp] Connecting to: tcp://127.0.0.1:51665
+2014-12-31 11:21:22.277 [NotebookApp] Using existing kernel: b46d6a3a-c01c-48a4-b772-5251feec5716
+2014-12-31 11:21:22.355 [NotebookApp] Connecting to: tcp://127.0.0.1:51664
+2014-12-31 11:21:22.357 [NotebookApp] Connecting to: tcp://127.0.0.1:51666
+2014-12-31 11:21:22.386 [NotebookApp] Connecting to: tcp://127.0.0.1:51665
+2014-12-31 12:54:10.429 [NotebookApp] CRITICAL | received signal 15, stopping
+2014-12-31 12:54:10.437 [NotebookApp] CRITICAL | received signal 15, stopping
+2014-12-31 12:54:10.479 [NotebookApp] CRITICAL | received signal 15, stopping
+2014-12-31 12:54:10.483 [NotebookApp] Shutting down kernels
+2014-12-31 12:54:10.487 [NotebookApp] Shutting down kernels
+2014-12-31 12:54:10.507 [NotebookApp] CRITICAL | received signal 15, stopping
+2014-12-31 12:54:10.521 [NotebookApp] Kernel shutdown: 9a0d064a-f4f9-4f38-be1a-60bb08ad88f1
+2014-12-31 12:54:10.522 [NotebookApp] Kernel shutdown: b46d6a3a-c01c-48a4-b772-5251feec5716
+2014-12-31 12:54:10.524 [NotebookApp] Shutting down kernels
+2014-12-31 12:54:10.525 [NotebookApp] Kernel shutdown: f0abdeab-ee86-47bf-9e9d-eac040faef48
+2014-12-31 12:54:10.561 [NotebookApp] Kernel shutdown: b4ad681f-d4e6-45be-bc05-29a82babf4bc
+2014-12-31 12:54:10.565 [NotebookApp] Kernel shutdown: 9dba22d8-f793-4c8a-8e71-ba66d7bb5717
+2014-12-31 12:54:10.568 [NotebookApp] Kernel shutdown: 87f49efc-ff94-4ef2-b22b-9e2f5685c491
+2014-12-31 12:54:10.523 [NotebookApp] CRITICAL | received signal 15, stopping
+2014-12-31 12:54:10.569 [NotebookApp] Kernel shutdown: a5e04873-7d0c-4542-ab45-81ba2b53d4a0
+2014-12-31 12:54:10.588 [NotebookApp] Shutting down kernels
+2014-12-31 12:54:10.603 [NotebookApp] Kernel shutdown: 33322a17-4065-4d0e-a81b-37137acb44c3
+2014-12-31 16:43:50.076 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2014-12-31 16:43:50.088 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2014-12-31 16:43:50.106 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2014-12-31 16:43:50.106 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8888/
+2014-12-31 16:43:50.106 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2014-12-31 16:43:54.558 [NotebookApp] Connecting to: tcp://127.0.0.1:49836
+2014-12-31 16:43:54.567 [NotebookApp] Kernel started: a9ca5412-7623-4002-9f7d-1f58bdaa3419
+2014-12-31 16:43:54.584 [NotebookApp] Connecting to: tcp://127.0.0.1:49835
+2014-12-31 16:43:54.586 [NotebookApp] Connecting to: tcp://127.0.0.1:49833
+2014-12-31 16:43:54.586 [NotebookApp] Connecting to: tcp://127.0.0.1:49834
+2015-01-01 07:16:44.908 [NotebookApp] Connecting to: tcp://127.0.0.1:50387
+2015-01-01 07:16:44.912 [NotebookApp] Kernel started: 8f18e6cc-08d5-472a-ba76-1f4a25e2564a
+2015-01-01 07:16:44.974 [NotebookApp] Connecting to: tcp://127.0.0.1:50386
+2015-01-01 07:16:44.975 [NotebookApp] Connecting to: tcp://127.0.0.1:50384
+2015-01-01 07:16:44.993 [NotebookApp] Connecting to: tcp://127.0.0.1:50385
+2015-01-01 17:22:05.601 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-01 17:22:05.612 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-01 17:22:05.629 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-01 17:22:05.629 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-01 17:22:05.629 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8889/
+2015-01-01 17:22:05.630 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-01 17:22:11.801 [NotebookApp] Connecting to: tcp://127.0.0.1:53113
+2015-01-01 17:22:11.804 [NotebookApp] Kernel started: e3260c66-8404-4c26-b475-9e4fdacefc13
+2015-01-01 17:22:11.997 [NotebookApp] Connecting to: tcp://127.0.0.1:53111
+2015-01-01 17:22:12.004 [NotebookApp] Connecting to: tcp://127.0.0.1:53112
+2015-01-01 17:22:12.007 [NotebookApp] Connecting to: tcp://127.0.0.1:53110
+2015-01-01 17:24:50.412 [NotebookApp] Kernel interrupted: e3260c66-8404-4c26-b475-9e4fdacefc13
+2015-01-01 17:24:53.666 [NotebookApp] Kernel restarted: e3260c66-8404-4c26-b475-9e4fdacefc13
+2015-01-01 17:24:53.681 [NotebookApp] Connecting to: tcp://127.0.0.1:53112
+2015-01-01 17:24:53.681 [NotebookApp] Connecting to: tcp://127.0.0.1:53111
+2015-01-01 17:24:53.682 [NotebookApp] Connecting to: tcp://127.0.0.1:53110
+2015-01-01 17:26:25.996 [NotebookApp] Connecting to: tcp://127.0.0.1:53215
+2015-01-01 17:26:25.997 [NotebookApp] Kernel started: 3039b134-e0b4-4bac-a050-0f1f5b98d608
+2015-01-01 17:26:26.176 [NotebookApp] Connecting to: tcp://127.0.0.1:53214
+2015-01-01 17:26:26.196 [NotebookApp] Connecting to: tcp://127.0.0.1:53212
+2015-01-01 17:26:26.205 [NotebookApp] Connecting to: tcp://127.0.0.1:53213
+2015-01-01 17:26:36.788 [NotebookApp] Connecting to: tcp://127.0.0.1:53246
+2015-01-01 17:26:36.789 [NotebookApp] Kernel started: dd8ef080-f51c-4c0c-b7b0-f89c4556fc8b
+2015-01-01 17:26:36.870 [NotebookApp] Connecting to: tcp://127.0.0.1:53243
+2015-01-01 17:26:36.900 [NotebookApp] Connecting to: tcp://127.0.0.1:53245
+2015-01-01 17:26:36.901 [NotebookApp] Connecting to: tcp://127.0.0.1:53244
+2015-01-01 17:26:46.225 [NotebookApp] Connecting to: tcp://127.0.0.1:53269
+2015-01-01 17:26:46.226 [NotebookApp] Kernel started: 01de1fe2-1338-498d-8994-420c8d2ed91f
+2015-01-01 17:26:46.304 [NotebookApp] Connecting to: tcp://127.0.0.1:53268
+2015-01-01 17:26:46.316 [NotebookApp] Connecting to: tcp://127.0.0.1:53266
+2015-01-01 17:26:46.323 [NotebookApp] Connecting to: tcp://127.0.0.1:53267
+2015-01-01 17:50:50.408 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-01 17:50:50.413 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-01 17:50:50.430 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-01 17:50:50.430 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-01 17:50:50.431 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-01 17:50:50.431 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8890/
+2015-01-01 17:50:50.431 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-01 17:50:57.420 [NotebookApp] Connecting to: tcp://127.0.0.1:53621
+2015-01-01 17:50:57.421 [NotebookApp] Kernel started: f21ef72b-eb95-47c5-b552-5d7e5b6af81b
+2015-01-01 17:50:57.473 [NotebookApp] Connecting to: tcp://127.0.0.1:53620
+2015-01-01 17:50:57.500 [NotebookApp] Connecting to: tcp://127.0.0.1:53618
+2015-01-01 17:50:57.507 [NotebookApp] Connecting to: tcp://127.0.0.1:53619
+2015-01-01 18:02:01.646 [NotebookApp] Kernel interrupted: f21ef72b-eb95-47c5-b552-5d7e5b6af81b
+2015-01-01 18:02:09.079 [NotebookApp] Kernel interrupted: f21ef72b-eb95-47c5-b552-5d7e5b6af81b
+2015-01-01 18:03:15.243 [NotebookApp] Using existing kernel: f21ef72b-eb95-47c5-b552-5d7e5b6af81b
+2015-01-01 18:03:15.336 [NotebookApp] Connecting to: tcp://127.0.0.1:53618
+2015-01-01 18:03:15.358 [NotebookApp] Connecting to: tcp://127.0.0.1:53620
+2015-01-01 18:03:15.359 [NotebookApp] Connecting to: tcp://127.0.0.1:53619
+2015-01-01 18:05:40.710 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-01 18:05:40.719 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-01 18:05:40.738 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-01 18:05:40.739 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-01 18:05:40.739 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-01 18:05:40.739 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-01 18:05:40.739 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8891/
+2015-01-01 18:05:40.739 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-01 18:05:45.232 [NotebookApp] Connecting to: tcp://127.0.0.1:53793
+2015-01-01 18:05:45.249 [NotebookApp] Kernel started: 3d49c13e-2c6a-4e61-b982-d37422d10f64
+2015-01-01 18:05:45.347 [NotebookApp] Connecting to: tcp://127.0.0.1:53792
+2015-01-01 18:05:45.403 [NotebookApp] Connecting to: tcp://127.0.0.1:53791
+2015-01-01 18:05:45.404 [NotebookApp] Connecting to: tcp://127.0.0.1:53790
+2015-01-01 19:46:25.838 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-01 19:46:25.843 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-01 19:46:25.860 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-01 19:46:25.860 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-01 19:46:25.860 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-01 19:46:25.860 [NotebookApp] The port 8891 is already in use, trying another random port.
+2015-01-01 19:46:25.861 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-01 19:46:25.861 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8892/
+2015-01-01 19:46:25.861 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-04 06:55:25.247 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-04 06:55:25.260 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-04 06:55:25.281 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-04 06:55:25.282 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-04 06:55:25.282 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-04 06:55:25.282 [NotebookApp] The port 8891 is already in use, trying another random port.
+2015-01-04 06:55:25.283 [NotebookApp] The port 8892 is already in use, trying another random port.
+2015-01-04 06:55:25.283 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-04 06:55:25.283 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8810/
+2015-01-04 06:55:25.283 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-04 06:55:31.360 [NotebookApp] Connecting to: tcp://127.0.0.1:56668
+2015-01-04 06:55:31.371 [NotebookApp] Kernel started: b926b82b-d57a-4538-a361-3a1c3374f95f
+2015-01-04 06:55:31.493 [NotebookApp] Connecting to: tcp://127.0.0.1:56665
+2015-01-04 06:55:31.567 [NotebookApp] Connecting to: tcp://127.0.0.1:56667
+2015-01-04 06:55:31.582 [NotebookApp] Connecting to: tcp://127.0.0.1:56666
+2015-01-04 06:58:34.833 [NotebookApp] Kernel restarted: b926b82b-d57a-4538-a361-3a1c3374f95f
+2015-01-04 06:58:34.846 [NotebookApp] Connecting to: tcp://127.0.0.1:56666
+2015-01-04 06:58:34.846 [NotebookApp] Connecting to: tcp://127.0.0.1:56665
+2015-01-04 06:58:34.847 [NotebookApp] Connecting to: tcp://127.0.0.1:56667
+2015-01-04 12:49:38.485 [NotebookApp] Connecting to: tcp://127.0.0.1:57535
+2015-01-04 12:49:38.493 [NotebookApp] Kernel started: 6324c5d2-dbbd-466f-8043-18f887920d4e
+2015-01-04 12:49:38.586 [NotebookApp] Connecting to: tcp://127.0.0.1:57533
+2015-01-04 12:49:38.604 [NotebookApp] Connecting to: tcp://127.0.0.1:57534
+2015-01-04 12:49:38.611 [NotebookApp] Connecting to: tcp://127.0.0.1:57532
+2015-01-04 13:50:19.734 [NotebookApp] Using existing kernel: 6324c5d2-dbbd-466f-8043-18f887920d4e
+2015-01-04 13:50:19.855 [NotebookApp] Connecting to: tcp://127.0.0.1:57533
+2015-01-04 13:50:19.877 [NotebookApp] Connecting to: tcp://127.0.0.1:57532
+2015-01-04 13:50:19.880 [NotebookApp] Connecting to: tcp://127.0.0.1:57534
+2015-01-04 14:14:46.293 [NotebookApp] Kernel shutdown: b926b82b-d57a-4538-a361-3a1c3374f95f
+2015-01-04 14:14:47.823 [NotebookApp] Kernel shutdown: 6324c5d2-dbbd-466f-8043-18f887920d4e
+2015-01-05 07:30:05.295 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-05 07:30:05.307 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-05 07:30:05.325 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-05 07:30:05.325 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-05 07:30:05.325 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-05 07:30:05.325 [NotebookApp] The port 8891 is already in use, trying another random port.
+2015-01-05 07:30:05.325 [NotebookApp] The port 8892 is already in use, trying another random port.
+2015-01-05 07:30:05.326 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-05 07:30:05.326 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8840/
+2015-01-05 07:30:05.326 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-05 07:30:11.102 [NotebookApp] Connecting to: tcp://127.0.0.1:50034
+2015-01-05 07:30:11.106 [NotebookApp] Kernel started: 36931270-0428-4409-9747-06312e72c959
+2015-01-05 07:30:11.208 [NotebookApp] Connecting to: tcp://127.0.0.1:50032
+2015-01-05 07:30:11.225 [NotebookApp] Connecting to: tcp://127.0.0.1:50031
+2015-01-05 07:30:11.296 [NotebookApp] Connecting to: tcp://127.0.0.1:50033
+2015-01-05 07:38:47.880 [NotebookApp] Kernel interrupted: 36931270-0428-4409-9747-06312e72c959
+2015-01-05 23:32:01.225 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.238 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.263 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:01.321 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.377 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:01.347 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.391 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:01.387 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.380 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.478 [NotebookApp] Kernel shutdown: a9ca5412-7623-4002-9f7d-1f58bdaa3419
+2015-01-05 23:32:01.402 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.483 [NotebookApp] Kernel shutdown: 8f18e6cc-08d5-472a-ba76-1f4a25e2564a
+2015-01-05 23:32:01.485 [NotebookApp] Kernel shutdown: 36931270-0428-4409-9747-06312e72c959
+2015-01-05 23:32:01.490 [NotebookApp] KernelRestarter: restarting kernel (1/5)
+2015-01-05 23:32:01.509 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:01.512 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:01.412 [NotebookApp] CRITICAL | received signal 15, stopping
+2015-01-05 23:32:01.547 [NotebookApp] Kernel shutdown: 3d49c13e-2c6a-4e61-b982-d37422d10f64
+2015-01-05 23:32:01.561 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:01.597 [NotebookApp] Shutting down kernels
+2015-01-05 23:32:02.536 [NotebookApp] Kernel shutdown: f21ef72b-eb95-47c5-b552-5d7e5b6af81b
+2015-01-05 23:32:02.538 [NotebookApp] Kernel shutdown: e3260c66-8404-4c26-b475-9e4fdacefc13
+2015-01-05 23:32:03.552 [NotebookApp] Kernel shutdown: 01de1fe2-1338-498d-8994-420c8d2ed91f
+2015-01-05 23:32:03.553 [NotebookApp] Kernel shutdown: 3039b134-e0b4-4bac-a050-0f1f5b98d608
+2015-01-05 23:32:03.562 [NotebookApp] Kernel shutdown: dd8ef080-f51c-4c0c-b7b0-f89c4556fc8b
