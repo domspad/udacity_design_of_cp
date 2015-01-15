@@ -1,20 +1,10 @@
 import functools
 import re
 
-# your code here
-REGRAMMAR = grammar(r"""RE => eol | basic RE | basic 
-basic => elem [*][?] | elem [+][?] | elem [?][+] | elem [?][*] | elem [*][+] | elem [+][*] | elem [+] | elem [*] | elem [?] | elem [|] elem | elem
-elem => [(] RE [)] | [[] set []] | char | dot
-set => [a-zA-Z0-9_]+
-char => [a-zA-Z0-9_]
-dot => [.]
-eol => ^$""", whitespace='')
 
-def parse_re(pattern) :
-    return convert(parse('RE', pattern, REGRAMMAR))
-
-def convert(tree) :
-    #your code here
+##################################################################
+##################################################################
+#                       Given Code
 
 def grammar(description, whitespace = r'\s*'):
     """
@@ -35,6 +25,10 @@ def grammar(description, whitespace = r'\s*'):
     specify '' as the second argument to grammar() to disallow this (or supply
     any regular expression to describe allowable whitespace between
     tokens)."""
+    def split(text, sep = None, maxsplit = -1):
+        "Like str.split applied to text, but strips whitespace from each piece."
+        return [t.strip() for t in text.strip().split(sep, maxsplit) if t]
+
     G = {' ': whitespace}
     description = description.replace('\t', ' ') # no tabs!
     for line in split(description, '\n'):
@@ -43,9 +37,7 @@ def grammar(description, whitespace = r'\s*'):
         G[lhs] = tuple(map(split, alternatives))
     return G
 
-    def split(text, sep = None, maxsplit = -1):
-    "Like str.split applied to text, but strips whitespace from each piece."
-    return [t.strip() for t in text.strip().split(sep, maxsplit) if t]
+
 
 def parse(start_symbol, text, grammar):
     """Example call: parse('Exp', '3*x + b', G).
@@ -162,3 +154,56 @@ def verify(G):
     show('Terminals', rhstokens - lhstokens)
     show('Suspects', [t for t in (rhstokens-lhstokens) if t.isalnum()])
     show('Orphans ', lhstokens-rhstokens)
+
+
+
+##################################################################
+##################################################################
+#                       My code
+
+# your code here
+REGRAMMAR = grammar(r"""RE => eol | basic RE | basic 
+basic => elem [*][?] | elem [+][?] | elem [?][+] | elem [?][*] | elem [*][+] | elem [+][*] | elem [+] | elem [*] | elem [?] | elem [|] elem | elem
+elem => [(] RE [)] | [[] set []] | char | dot
+set => [a-zA-Z0-9_]+
+char => [a-zA-Z0-9_]
+dot => [.]
+eol => ^$""", whitespace='')
+
+def parse_re(pattern) :
+    return convert(parse('RE', pattern, REGRAMMAR))
+
+# def convert(tree) :
+    #your code here
+
+# def parse_single_op_string(opstring) :
+
+
+##################################################################
+##################################################################
+#                       Tests
+
+def tests() :
+    patterns = ['a', 'ab', 'a|b', 'a*', 'a+', 'a?','a+?', '[ab]', '.','','(ab)+']
+    trees = [['RE', ['basic', ['elem', ['char', 'a']]], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', ['char', 'a']]], ['RE', ['basic', ['elem', ['char', 'b']]], ['RE', ['eol', '']]]],
+         ['RE', ['basic', ['elem', ['char', 'a']], '|', ['elem', ['char', 'b']]], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', ['char', 'a']], '*'], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', ['char', 'a']], '+'], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', ['char', 'a']], '?'], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', ['char', 'a']], '+?'], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', '[', ['set', 'ab'], ']']], ['RE', ['eol', '']]],
+         ['RE', ['basic', ['elem', ['dot','.']]], ['RE', ['eol', '']]],
+         ['RE', ['eol', '']],
+         ['RE', ['basic', ['elem', '(', ['RE', ['basic', ['elem', ['char', 'a']]], ['RE', ['basic', ['elem', ['char', 'b']]]]], ')'], '+'], ['RE', ['eol', '']]]]
+    strings =  #add these cases next
+
+    indices = range(len(patterns))
+
+    # print parse('RE',patterns[8], REGRAMMAR)[0]
+    # print trees[8]
+    assert all(parse('RE', patterns[i], REGRAMMAR)[0] == trees[i] for i in indices)
+
+    print "passes tests"
+
+tests()
