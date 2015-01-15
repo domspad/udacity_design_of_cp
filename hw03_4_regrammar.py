@@ -173,10 +173,43 @@ eol => ^$""", whitespace='')
 def parse_re(pattern) :
     return convert(parse('RE', pattern, REGRAMMAR))
 
-# def convert(tree) :
-    #your code here
+def convert(tree) :
+    """Processes top node of the given regex tree and calls itself on the children nodes, until entire
+    tree has been translated into the regex API"""
+    kind = tree[0]
 
-# def parse_single_op_string(opstring) :
+    if kind is "dot" or kind is "eol" :
+        return kind
+    elif kind == "char" :
+        return "lit('" + tree[1] + "')"
+    elif kind == "set" :
+        return "oneof('" + tree[1] + "')"
+    elif kind == "elem" :
+        if len(tree) >= 3 :
+            return convert(tree[2]) 
+        else :
+            return convert(tree[1])
+    elif kind == "basic" :
+        if len(tree) == 4 :
+            return "alt(" + convert(tree[1]) + "," + convert(tree[3]) + ")"
+        elif len(tree) == 3 :
+            return parse_single_op_string(tree[2]) + convert(tree[1]) + ")"*len(tree[2])
+        else :
+            return convert(tree[1])
+    elif kind == "RE" :
+        if len(tree) == 3 :
+            return "seq(" + convert(tree[1]) + "," + convert(tree[2]) + ")"
+        else :
+            return convert(tree[1])
+    else :
+        print "invalid node tag : {}".format(kind)
+
+def parse_single_op_string(opstring) :
+    """Translates "+?" to "plus(opt(" """
+    ops = {'+' : "plus",
+           '?' : "opt" , 
+           '*' : "star"}
+    return '('.join(ops[c] for c in reversed(opstring)) + '('
 
 
 ##################################################################
@@ -196,14 +229,27 @@ def tests() :
          ['RE', ['basic', ['elem', ['dot','.']]], ['RE', ['eol', '']]],
          ['RE', ['eol', '']],
          ['RE', ['basic', ['elem', '(', ['RE', ['basic', ['elem', ['char', 'a']]], ['RE', ['basic', ['elem', ['char', 'b']]]]], ')'], '+'], ['RE', ['eol', '']]]]
-    strings =  #add these cases next
+    strings =  ["lit('a')",
+                "seq(lit('a'),lit('b'))",
+                "alt(lit('a'),lit('b'))",
+                "star(lit('a'))",
+                "plus(lit('a'))",
+                "opt(lit('a'))",
+                "opt(plus(lit('a')))",
+                "oneof('ab')",
+                "dot",
+                "eol",
+                "plus(seq(lit('a'),lit('b')))"]
+    singleops = ['+','+?','*?']
+    singleopsAPI = ['plus(','opt(plus(','opt(star(']
 
     indices = range(len(patterns))
 
     # print parse('RE',patterns[8], REGRAMMAR)[0]
     # print trees[8]
     assert all(parse('RE', patterns[i], REGRAMMAR)[0] == trees[i] for i in indices)
-
+    assert all(parse_single_op_string(singleops[i]) == singleopsAPI[i] for i in range(len(singleops)))
+    assert all(convert(parse('RE', patterns[i], REGRAMMAR)[0]) == strings[i] for i in indices)
     print "passes tests"
 
 tests()
