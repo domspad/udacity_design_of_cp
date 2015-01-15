@@ -4,9 +4,10 @@ import re
 # your code here
 REGRAMMAR = grammar(r"""RE => eol | basic RE | basic 
 basic => elem [*][?] | elem [+][?] | elem [?][+] | elem [?][*] | elem [*][+] | elem [+][*] | elem [+] | elem [*] | elem [?] | elem [|] elem | elem
-elem => [(] RE [)] | [[] set []] | char | [.]
+elem => [(] RE [)] | [[] set []] | char | dot
 set => [a-zA-Z0-9_]+
 char => [a-zA-Z0-9_]
+dot => [.]
 eol => ^$""", whitespace='')
 
 def parse_re(pattern) :
