@@ -27,6 +27,7 @@
 # assert statements in test_ride(), it should be marked correct.
 
 from collections import defaultdict
+from itertools import combinations
 
 def subway(**lines):
     """Define a subway map. Input is subway(linename='station1 station2...'...).
@@ -56,7 +57,8 @@ def ride(here, there, system=boston):
 def longest_ride(system):
     """"Return the longest possible 'shortest path' 
     ride between any two stops in the system."""
-    ## your code here
+    end_stops = [stop for stop, adj in system.items() if len(adj) == 1]
+    return max([ride(stops[0],stops[1],system) for stops in combinations(end_stops,2)], key=len)
 
 def shortest_path_search(start, successors, is_goal):
     """Find the shortest path from start state to a state
@@ -87,6 +89,7 @@ def path_actions(path):
     return path[1::2]
 
 def tests() :
+    # Tests the subway function
     #       4    6
     #       |    |
     #  1 -- 2 -- 3    Line a
@@ -116,13 +119,13 @@ def test_ride():
     assert ride('newton', 'alewife') == [
         'newton', 'green', 'kenmore', 'green', 'copley', 'green', 'park', 'red', 'charles', 'red',
         'mit', 'red', 'central', 'red', 'harvard', 'red', 'porter', 'red', 'davis', 'red', 'alewife']
-    # assert (path_states(longest_ride(boston)) == [
-    #     'wonderland', 'revere', 'suffolk', 'airport', 'maverick', 'aquarium', 'state', 'downtown', 'park',
-    #     'charles', 'mit', 'central', 'harvard', 'porter', 'davis', 'alewife'] or 
-    #     path_states(longest_ride(boston)) == [
-    #             'alewife', 'davis', 'porter', 'harvard', 'central', 'mit', 'charles', 
-    #             'park', 'downtown', 'state', 'aquarium', 'maverick', 'airport', 'suffolk', 'revere', 'wonderland'])
-    # assert len(path_states(longest_ride(boston))) == 16
+    assert (path_states(longest_ride(boston)) == [
+        'wonderland', 'revere', 'suffolk', 'airport', 'maverick', 'aquarium', 'state', 'downtown', 'park',
+        'charles', 'mit', 'central', 'harvard', 'porter', 'davis', 'alewife'] or 
+        path_states(longest_ride(boston)) == [
+                'alewife', 'davis', 'porter', 'harvard', 'central', 'mit', 'charles', 
+                'park', 'downtown', 'state', 'aquarium', 'maverick', 'airport', 'suffolk', 'revere', 'wonderland'])
+    assert len(path_states(longest_ride(boston))) == 16
     return 'test_ride passes'
 
 tests()
