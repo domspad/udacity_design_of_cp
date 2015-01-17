@@ -29,7 +29,9 @@
 def subway(**lines):
     """Define a subway map. Input is subway(linename='station1 station2...'...).
     Convert that and return a dict of the form: {station:{neighbor:line,...},...}"""
-    ## your code here
+    # Make {state: (state, action)} dictionary
+    network = {}
+    return network
 
 boston = subway(
     blue='bowdoin government state aquarium maverick airport suffolk revere wonderland',
@@ -39,7 +41,9 @@ boston = subway(
 
 def ride(here, there, system=boston):
     "Return a path on the subway system from here to there."
-    ## your code here
+    # def successors with system dictionary
+    return shortest_path_search(here, successors, (lambda x : x == there))
+
 
 def longest_ride(system):
     """"Return the longest possible 'shortest path' 
