@@ -26,6 +26,15 @@
 # longest_ride() will be explicitly tested. If your code passes the 
 # assert statements in test_ride(), it should be marked correct.
 
+# -------------
+# COMPARISON WITH NORVIGS -- GOOD!
+#
+# subway - same method and design (his is a little more readable because
+        # he has helper function for getting adjacent stops)
+# ride - same 
+# longest_ride - I did a little more efficient search by only choosing end stops to look
+    #   but we basically have the same design apart from that
+
 from collections import defaultdict
 from itertools import combinations
 
