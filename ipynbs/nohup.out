@@ -555,3 +555,53 @@
 2015-01-18 12:00:26.417 [NotebookApp] Connecting to: tcp://127.0.0.1:49754
 2015-01-18 12:00:26.419 [NotebookApp] Connecting to: tcp://127.0.0.1:49756
 2015-01-18 12:00:26.419 [NotebookApp] Connecting to: tcp://127.0.0.1:49755
+2015-01-19 10:26:24.371 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-19 10:26:24.385 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-19 10:26:24.408 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-19 10:26:24.408 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-19 10:26:24.409 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-19 10:26:24.409 [NotebookApp] The port 8891 is already in use, trying another random port.
+2015-01-19 10:26:24.409 [NotebookApp] The port 8892 is already in use, trying another random port.
+2015-01-19 10:26:24.409 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-19 10:26:24.409 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8922/
+2015-01-19 10:26:24.409 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-19 10:26:30.995 [NotebookApp] Connecting to: tcp://127.0.0.1:53484
+2015-01-19 10:26:31.025 [NotebookApp] Kernel started: 1f6d2dae-330a-442d-9cb4-51dee0af92d2
+2015-01-19 10:26:31.159 [NotebookApp] Connecting to: tcp://127.0.0.1:53481
+2015-01-19 10:26:31.161 [NotebookApp] Connecting to: tcp://127.0.0.1:53483
+2015-01-19 10:26:31.162 [NotebookApp] Connecting to: tcp://127.0.0.1:53482
+2015-01-19 10:26:33.505 [NotebookApp] Connecting to: tcp://127.0.0.1:53523
+2015-01-19 10:26:33.506 [NotebookApp] Kernel started: 8e46a4b6-25e4-445f-bbe6-43e5673e4c97
+2015-01-19 10:26:33.567 [NotebookApp] Connecting to: tcp://127.0.0.1:53520
+2015-01-19 10:26:33.568 [NotebookApp] Connecting to: tcp://127.0.0.1:53522
+2015-01-19 10:26:33.571 [NotebookApp] Connecting to: tcp://127.0.0.1:53521
+2015-01-20 17:04:58.852 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-20 17:04:58.863 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-20 17:04:58.884 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-20 17:04:58.884 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-20 17:04:58.884 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-20 17:04:58.885 [NotebookApp] The port 8891 is already in use, trying another random port.
+2015-01-20 17:04:58.885 [NotebookApp] The port 8892 is already in use, trying another random port.
+2015-01-20 17:04:58.886 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-20 17:04:58.886 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8832/
+2015-01-20 17:04:58.887 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-20 17:05:10.117 [NotebookApp] Connecting to: tcp://127.0.0.1:51571
+2015-01-20 17:05:10.143 [NotebookApp] Kernel started: 9018914c-f252-4bd3-8bd6-d69a52003e2e
+2015-01-20 17:05:10.388 [NotebookApp] Connecting to: tcp://127.0.0.1:51568
+2015-01-20 17:05:10.390 [NotebookApp] Connecting to: tcp://127.0.0.1:51570
+2015-01-20 17:05:10.391 [NotebookApp] Connecting to: tcp://127.0.0.1:51569
+2015-01-21 14:51:38.798 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-21 14:51:38.812 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-21 14:51:38.828 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-21 14:51:38.828 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-21 14:51:38.829 [NotebookApp] The port 8890 is already in use, trying another random port.
+2015-01-21 14:51:38.829 [NotebookApp] The port 8891 is already in use, trying another random port.
+2015-01-21 14:51:38.829 [NotebookApp] The port 8892 is already in use, trying another random port.
+2015-01-21 14:51:38.829 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-21 14:51:38.829 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8870/
+2015-01-21 14:51:38.829 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-21 14:52:57.059 [NotebookApp] Connecting to: tcp://127.0.0.1:59624
+2015-01-21 14:52:57.089 [NotebookApp] Kernel started: 590b73cd-ac45-4819-afdd-3a4ee09745a9
+2015-01-21 14:52:57.188 [NotebookApp] Connecting to: tcp://127.0.0.1:59621
+2015-01-21 14:52:57.190 [NotebookApp] Connecting to: tcp://127.0.0.1:59623
+2015-01-21 14:52:57.195 [NotebookApp] Connecting to: tcp://127.0.0.1:59622
