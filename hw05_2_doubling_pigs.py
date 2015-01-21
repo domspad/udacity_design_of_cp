@@ -41,9 +41,14 @@ def pig_actions_d(state):
     return acts
 
 def strategy_d(state):
-    return "roll"
+    """Doubles if looks like is going to win, else plays hold_20_d
+        Wins > 60%  of points roughly 60%  of time agains hold_20_d
+    """
+    _, me, you, pending, double = state
+    if me + pending > you + 15 and double == 1 :
+        return 'double'
+    return hold_20_d(state)
 
-## You can use the code below, but don't need to modify it.
 
 def hold_20_d(state):
     "Hold at 20 pending.  Always accept; never double."
@@ -128,7 +133,7 @@ def test():
     assert strategy_compare(strategy_d, hold_20_d) > 60 # must win 60% of the points      
     return 'test passes'
 
-# print test()
+print test()
 
 def test_pig_actions_d() :
     cases = { (0,0,0,0,1) : ['roll', 'double'],
@@ -140,6 +145,6 @@ def test_pig_actions_d() :
     assert all(pig_actions_d(state) == acts for state, acts in cases.items())
     return "passes all tests"
 
-print test_pig_actions_d()
+# print test_pig_actions_d()
 
 
