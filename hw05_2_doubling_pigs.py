@@ -49,6 +49,13 @@ def strategy_d(state):
         return 'double'
     return hold_20_d(state)
 
+def max_expected_point_diff(state) :
+    """An optimal strategy for maximizing the expected point differential for given game.
+        Given that outcomes of game are I win 2, I win 1, you win 1, you win 2,
+        the differentials possible in one game are respectively 2, 1, -1, -2
+    """
+    blah "try modification of other optimial strat in terms of Pwin*numps?"
+
 
 def hold_20_d(state):
     "Hold at 20 pending.  Always accept; never double."
