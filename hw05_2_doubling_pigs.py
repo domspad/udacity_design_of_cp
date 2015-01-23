@@ -45,6 +45,25 @@ def memo(f):
     _f.cache = cache
     return _f
 
+@decorator
+def trace(f):
+    indent = '   '
+    def _f(*args):
+        signature = '%s(%s)' % (f.__name__, ', '.join(map(repr, args)))
+        print '%s--> %s' % (trace.level*indent, signature)
+        trace.level += 1
+        try:
+            # your code here
+            result = f(*args)
+            print '%s<-- %s == %s' % ((trace.level-1)*indent, 
+                                      signature, result)
+        finally:
+            # your code here
+            trace.level-=1
+        return result
+    trace.level = 0
+    return _f
+
 
 def pig_actions_d(state):
     """The legal actions from a state. Usually, ["roll", "hold"].
@@ -78,12 +97,12 @@ def strategy_d(state):
 
 def Q_pig(state, action, Epoint) :
     "The expected value of choosing action in state."
-    if action in ['hold','double'] :
+    if action in ['hold','double', 'accept','decline'] :
         return -Epoint(do(action, state, dierolls))
-    elif action == 'accept' :
-        return 2 * -Epoint(do(action, state, dierolls))
-    elif action == 'decline' :
-        return -1
+    # elif action == 'accept' :
+    #     return 2 * -Epoint(do(action, state, dierolls))
+    # elif action == 'decline' :
+    #     return -1
     elif action == 'roll' :
         return (-Epoint(do(action, state, one()))
                     + sum(Epoint(do(action, state,d())) for d in (two, three, four, five, six))) / 6
@@ -117,7 +136,6 @@ def Epoint(state) :
     else :
         return max(Q_pig(state, action, Epoint)
                         for action in pig_actions_d(state))
-
 def best_action(state, actions, Q, U) :
     """Returns optimal action for a state, given U."""
     def EU(action) : return Q(state, action, U)
@@ -218,8 +236,9 @@ def test():
     assert(Epoint((0,39,40,0,2))) == -2
     assert(Epoint((0,39,40,0,1))) == -1
     assert(max_expected_point((0,39,39,0,2)) == 'roll')
+    assert(max_expected_point((0,38,38,0,1)) == 'double')
 
-    assert strategy_compare(max_expected_point, hold_20_d) > 60 # must win 60% of the points      
+    assert strategy_compare(strategy_d, hold_20_d) > 60 # must win 60% of the points      
     return 'test passes'
 
 print test()
