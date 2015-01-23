@@ -18,6 +18,33 @@
 # marked correct. Happy pigging!
 
 import random
+from functools import update_wrapper
+
+
+def decorator(d):
+    "Make function d a decorator: d wraps a function fn."
+    def _d(fn):
+        return update_wrapper(d(fn), fn)
+    update_wrapper(_d, d)
+    return _d
+
+@decorator
+def memo(f):
+    """Decorator that caches the return value for each call to f(args).
+    Then when called again with same args, we can just look it up."""
+    cache = {}
+    def _f(*args):
+        try:
+            return cache[args]
+        except KeyError:
+            cache[args] = result = f(*args)
+            return result
+        except TypeError:
+            # some element of args can't be a dict key
+            return f(*args)
+    _f.cache = cache
+    return _f
+
 
 def pig_actions_d(state):
     """The legal actions from a state. Usually, ["roll", "hold"].
@@ -49,12 +76,60 @@ def strategy_d(state):
         return 'double'
     return hold_20_d(state)
 
-def max_expected_point_diff(state) :
+def Q_pig(state, action, Epoint) :
+    "The expected value of choosing action in state."
+    if action in ['hold','double'] :
+        return -Epoint(do(action, state, dierolls))
+    elif action == 'accept' :
+        return 2 * -Epoint(do(action, state, dierolls))
+    elif action == 'decline' :
+        return -1
+    elif action == 'roll' :
+        return (-Epoint(do(action, state, one()))
+                    + sum(Epoint(do(action, state,d())) for d in (two, three, four, five, six))) / 6
+
+def one() : yield 1
+def two() : yield 2
+def three() : yield 3
+def four() : yield 4
+def five() : yield 5
+def six() : yield 6
+
+@memo
+def Epoint(state) :
+    """The utility of a state; here it is the expected point outcome of a game,
+    given that the players are optimal"""
+    (p, me, you, pending, double) = state
+    if me + pending >= goal :
+        if double == 1 :
+            return 1
+        elif double == 'double' :
+            return 1
+        else :
+            return 2
+    elif you >= goal :
+        if double == 1 :
+            return -1
+        elif double == 'double' :
+            return -1
+        else :
+            return -2
+    else :
+        return max(Q_pig(state, action, Epoint)
+                        for action in pig_actions_d(state))
+
+def best_action(state, actions, Q, U) :
+    """Returns optimal action for a state, given U."""
+    def EU(action) : return Q(state, action, U)
+    return max(actions(state), key=EU)
+
+@memo
+def max_expected_point(state) :
     """An optimal strategy for maximizing the expected point differential for given game.
         Given that outcomes of game are I win 2, I win 1, you win 1, you win 2,
         the differentials possible in one game are respectively 2, 1, -1, -2
     """
-    blah "try modification of other optimial strat in terms of Pwin*numps?"
+    return best_action(state, pig_actions_d, Q_pig, Epoint)
 
 
 def hold_20_d(state):
@@ -137,7 +212,14 @@ def test():
     assert set(pig_actions_d((1, 20, 30, 5, 2)))        == set(['hold', 'roll']) 
     assert set(pig_actions_d((0, 5, 5, 5, 1)))          == set(['roll', 'hold', 'double'])
     assert set(pig_actions_d((1, 10, 15, 6, 'double'))) == set(['accept', 'decline']) 
-    assert strategy_compare(strategy_d, hold_20_d) > 60 # must win 60% of the points      
+
+    assert(Epoint((0,40,39,0,2))) == 2
+    assert(Epoint((0,39,39,0,2))) == 2
+    assert(Epoint((0,39,40,0,2))) == -2
+    assert(Epoint((0,39,40,0,1))) == -1
+    assert(max_expected_point((0,39,39,0,2)) == 'roll')
+
+    assert strategy_compare(max_expected_point, hold_20_d) > 60 # must win 60% of the points      
     return 'test passes'
 
 print test()
