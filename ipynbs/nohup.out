@@ -693,3 +693,26 @@
 2015-01-22 18:10:25.616 [NotebookApp] Connecting to: tcp://127.0.0.1:53565
 2015-01-22 18:10:25.617 [NotebookApp] Connecting to: tcp://127.0.0.1:53567
 2015-01-22 18:10:25.621 [NotebookApp] Connecting to: tcp://127.0.0.1:53566
+2015-01-23 15:29:14.703 [NotebookApp] Using existing profile dir: u'/Users/dominicspadacene/.ipython/profile_default'
+2015-01-23 15:29:14.711 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2015-01-23 15:29:14.731 [NotebookApp] The port 8888 is already in use, trying another random port.
+2015-01-23 15:29:14.731 [NotebookApp] The port 8889 is already in use, trying another random port.
+2015-01-23 15:29:14.731 [NotebookApp] Serving notebooks from local directory: /Users/dominicspadacene/Desktop/github_projects/udacity_design_of_cp/ipynbs
+2015-01-23 15:29:14.731 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8890/
+2015-01-23 15:29:14.731 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2015-01-23 15:29:20.378 [NotebookApp] Connecting to: tcp://127.0.0.1:49826
+2015-01-23 15:29:20.415 [NotebookApp] Kernel started: d440c6d8-4d70-4921-98fc-483c7151d7ae
+2015-01-23 15:29:20.520 [NotebookApp] Connecting to: tcp://127.0.0.1:49823
+2015-01-23 15:29:20.522 [NotebookApp] Connecting to: tcp://127.0.0.1:49825
+2015-01-23 15:29:20.526 [NotebookApp] Connecting to: tcp://127.0.0.1:49824
+2015-01-23 15:30:45.730 [NotebookApp] Kernel interrupted: d440c6d8-4d70-4921-98fc-483c7151d7ae
+2015-01-23 15:30:50.396 [NotebookApp] Kernel shutdown: d440c6d8-4d70-4921-98fc-483c7151d7ae
+2015-01-23 15:30:51.810 [NotebookApp] Connecting to: tcp://127.0.0.1:53950
+2015-01-23 15:30:51.813 [NotebookApp] Kernel started: 4f4560d8-e800-4925-a849-ee676d6c17e0
+2015-01-23 15:30:51.912 [NotebookApp] Connecting to: tcp://127.0.0.1:53947
+2015-01-23 15:30:51.913 [NotebookApp] Connecting to: tcp://127.0.0.1:53949
+2015-01-23 15:30:51.914 [NotebookApp] Connecting to: tcp://127.0.0.1:53948
+2015-01-23 17:31:22.488 [NotebookApp] Using existing kernel: 4f4560d8-e800-4925-a849-ee676d6c17e0
+2015-01-23 17:31:22.618 [NotebookApp] Connecting to: tcp://127.0.0.1:53947
+2015-01-23 17:31:22.635 [NotebookApp] Connecting to: tcp://127.0.0.1:53949
+2015-01-23 17:31:22.636 [NotebookApp] Connecting to: tcp://127.0.0.1:53948
